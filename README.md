@@ -2,7 +2,7 @@
 
 ## Get start
 
-    Click "Use this template" => "Create new Repository"
+    clone repository
     Run npm i
     Run npm run dev
 
