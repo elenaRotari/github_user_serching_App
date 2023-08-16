@@ -9,7 +9,7 @@ const SearchForm = () => {
     setUser(e.target.value);
   };
   return (
-    <form className="form">
+    <form className="form" onSubmit={(e) => e.preventDefault()}>
       <input
         type="text"
         name="user"
