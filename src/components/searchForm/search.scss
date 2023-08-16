@@ -6,6 +6,11 @@ $secondary-size: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 
   input {
     background-color: transparent;
@@ -15,8 +20,9 @@ $secondary-size: 0.5rem;
     padding: $secondary-size;
     width: 50%;
     outline: none;
+    flex: 1;
   }
-  button {
+  .button {
     padding: $secondary-size calc($secondary-size + $primary-size);
     border: none;
     background-color: $primary-color;
@@ -25,5 +31,6 @@ $secondary-size: 0.5rem;
     cursor: pointer;
     outline: none;
     border-radius: calc($secondary-size * 0.5);
+    text-decoration: none;
   }
 }
