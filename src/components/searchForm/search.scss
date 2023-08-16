@@ -1,0 +1,29 @@
+$primary-color: #444;
+$secondary-color: #999;
+$primary-size: 1rem;
+$secondary-size: 0.5rem;
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $primary-color;
+    font-size: $primary-size;
+    padding: $secondary-size;
+    width: 50%;
+    outline: none;
+  }
+  button {
+    padding: $secondary-size calc($secondary-size + $primary-size);
+    border: none;
+    background-color: $primary-color;
+    color: #fff;
+    font-size: $primary-size;
+    cursor: pointer;
+    outline: none;
+    border-radius: calc($secondary-size * 0.5);
+  }
+}

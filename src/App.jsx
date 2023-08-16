@@ -1,12 +1,11 @@
-import "./App.scss";
-
 import React from "react";
-import SearchForm from "./components/SearchForm";
+import SearchForm from "./components/searchForm/SearchForm";
 import { Outlet } from "react-router-dom";
+import "./App.scss";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <SearchForm />
       <Outlet />
     </div>

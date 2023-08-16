@@ -8,13 +8,21 @@ const UserCard = () => {
 
   return (
     <div className="card">
-      <h1>{userData?.name}</h1>
       <img src={userData?.avatar_url} alt={userData.name} />
-      <h4>{userData?.public_repos}</h4>
+      <h1>
+        {" "}
+        <span> Name: </span>
+        {userData?.name}
+      </h1>
+      <h4>
+        {" "}
+        <span>Public Repos: </span>
+        {userData?.public_repos}
+      </h4>
       {repos?.map((repo) => (
         <div key={repo.id}>
           <h3>
-            <span>Repositorium Name: </span>
+            <span>Repos Name: </span>
             {repo.name}
           </h3>
           <h4>
