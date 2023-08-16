@@ -15,6 +15,9 @@ $secondary-size: 0.5rem;
   margin: 5rem auto;
   width: 50%;
   padding: calc($primary-size * 2);
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 
   .card_details {
     display: flex;
@@ -33,12 +36,17 @@ $secondary-size: 0.5rem;
   .card_repos_details {
     h3 {
       text-align: center;
+      color: black;
+      text-decoration: underline;
+      margin-top: calc($secondary-size * 4);
     }
     span {
-      color: purple;
+      color: black;
       font-weight: 900;
       font-size: calc($primary-size * 1.2);
+      word-spacing: 5px;
     }
+    color: $primary-color;
     max-height: 370px;
     width: 100%;
     display: flex;
